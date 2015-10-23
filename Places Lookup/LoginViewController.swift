@@ -1,5 +1,5 @@
 //
-//  FeedbackViewController.swift
+//  LoginViewController.swift
 //  PlacesLookup
 //
 //  Created by Swagat Kumar Bisoyi on 10/22/15.
@@ -8,14 +8,13 @@
 
 import UIKit
 
-class FeedbackViewController: UIViewController {
+class LoginViewController: UIViewController {
 
-    var delegate: CenterViewControllerDelegate?
-
+    var appDelegate : AppDelegate = AppDelegate()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = containerVC.feedbackViewController.delegate
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+
         // Do any additional setup after loading the view.
     }
 
@@ -23,12 +22,12 @@ class FeedbackViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func btnMenuTapped(sender: AnyObject) {
-        //        NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
-        print(delegate)
-        delegate?.toggleLeftPanel()
-        
+    @IBAction func btnLoginTapped(sender: AnyObject) {
+        appDelegate.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let containerViewController = ContainerViewController()
+
+        appDelegate.window!.rootViewController = containerViewController
+        appDelegate.window!.makeKeyAndVisible()
     }
 
 

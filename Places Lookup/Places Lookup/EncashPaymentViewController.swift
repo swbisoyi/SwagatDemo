@@ -1,5 +1,5 @@
 //
-//  FeedbackViewController.swift
+//  EncashPaymentViewController.swift
 //  PlacesLookup
 //
 //  Created by Swagat Kumar Bisoyi on 10/22/15.
@@ -8,14 +8,11 @@
 
 import UIKit
 
-class FeedbackViewController: UIViewController {
-
-    var delegate: CenterViewControllerDelegate?
+class EncashPaymentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = containerVC.feedbackViewController.delegate
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
+
         // Do any additional setup after loading the view.
     }
 
@@ -24,13 +21,6 @@ class FeedbackViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func btnMenuTapped(sender: AnyObject) {
-        //        NSNotificationCenter.defaultCenter().postNotificationName("toggleMenu", object: nil)
-        print(delegate)
-        delegate?.toggleLeftPanel()
-        
-    }
-
 
     /*
     // MARK: - Navigation

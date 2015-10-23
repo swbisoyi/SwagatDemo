@@ -16,13 +16,17 @@
 		C4E9CBAF1BB9775E00E428EF /* Places_LookupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9CBAE1BB9775E00E428EF /* Places_LookupTests.swift */; };
 		C4E9CBBA1BB9775E00E428EF /* Places_LookupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9CBB91BB9775E00E428EF /* Places_LookupUITests.swift */; };
 		C4EF15001BBC41AC002DDCF3 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF14FF1BBC41AB002DDCF3 /* SearchResultsController.swift */; };
+		DF0B30501BD8CF33000FB569 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B304F1BD8CF33000FB569 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF52E81B1BD41299001E7334 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52E81A1BD41299001E7334 /* MenuTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		DF52E81F1BD4286E001E7334 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52E81E1BD4286E001E7334 /* FeedbackViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF65A26E1BC4F1E1000523D4 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65A26D1BC4F1E1000523D4 /* RouteViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF65A2701BC4F1E9000523D4 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65A26F1BC4F1E9000523D4 /* MapTasks.swift */; settings = {ASSET_TAGS = (); }; };
 		DFB3DB1C1BD3A789001B81ED /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB3DB1B1BD3A789001B81ED /* SidePanelViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DFB3DB2B1BD3A81C001B81ED /* ID-100113060.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB3DB201BD3A81C001B81ED /* ID-100113060.jpg */; settings = {ASSET_TAGS = (); }; };
 		DFB3DB371BD3A974001B81ED /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB3DB361BD3A974001B81ED /* ContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFD226FF1BD898E4004F9AC9 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD226FE1BD898E4004F9AC9 /* PaymentViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFD227011BD89A20004F9AC9 /* AccountPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD227001BD89A20004F9AC9 /* AccountPaymentViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFD227031BD89A47004F9AC9 /* EncashPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD227021BD89A47004F9AC9 /* EncashPaymentViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFE702391BD9182800FB36CF /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE702381BD9182800FB36CF /* FeedbackViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +64,17 @@
 		C4E9CBB91BB9775E00E428EF /* Places_LookupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places_LookupUITests.swift; sourceTree = "<group>"; };
 		C4E9CBBB1BB9775E00E428EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4EF14FF1BBC41AB002DDCF3 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		DF0B304F1BD8CF33000FB569 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		DF52E81A1BD41299001E7334 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
-		DF52E81E1BD4286E001E7334 /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		DF65A26D1BC4F1E1000523D4 /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
 		DF65A26F1BC4F1E9000523D4 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
 		DFB3DB1B1BD3A789001B81ED /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 		DFB3DB201BD3A81C001B81ED /* ID-100113060.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ID-100113060.jpg"; sourceTree = "<group>"; };
 		DFB3DB361BD3A974001B81ED /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		DFD226FE1BD898E4004F9AC9 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		DFD227001BD89A20004F9AC9 /* AccountPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountPaymentViewController.swift; sourceTree = "<group>"; };
+		DFD227021BD89A47004F9AC9 /* EncashPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncashPaymentViewController.swift; sourceTree = "<group>"; };
+		DFE702381BD9182800FB36CF /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,8 +194,12 @@
 		DFDD17BF1BCD8CFC001D208C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF0B304F1BD8CF33000FB569 /* LoginViewController.swift */,
+				DFD226FE1BD898E4004F9AC9 /* PaymentViewController.swift */,
+				DFD227001BD89A20004F9AC9 /* AccountPaymentViewController.swift */,
+				DFD227021BD89A47004F9AC9 /* EncashPaymentViewController.swift */,
 				DF65A26D1BC4F1E1000523D4 /* RouteViewController.swift */,
-				DF52E81E1BD4286E001E7334 /* FeedbackViewController.swift */,
+				DFE702381BD9182800FB36CF /* FeedbackViewController.swift */,
 				C4EF14FF1BBC41AB002DDCF3 /* SearchResultsController.swift */,
 				C4E9CB9B1BB9775E00E428EF /* ViewController.swift */,
 			);
@@ -403,7 +415,11 @@
 				C4E9CB9C1BB9775E00E428EF /* ViewController.swift in Sources */,
 				DF52E81B1BD41299001E7334 /* MenuTableViewCell.swift in Sources */,
 				C4EF15001BBC41AC002DDCF3 /* SearchResultsController.swift in Sources */,
-				DF52E81F1BD4286E001E7334 /* FeedbackViewController.swift in Sources */,
+				DFD226FF1BD898E4004F9AC9 /* PaymentViewController.swift in Sources */,
+				DFD227011BD89A20004F9AC9 /* AccountPaymentViewController.swift in Sources */,
+				DFD227031BD89A47004F9AC9 /* EncashPaymentViewController.swift in Sources */,
+				DFE702391BD9182800FB36CF /* FeedbackViewController.swift in Sources */,
+				DF0B30501BD8CF33000FB569 /* LoginViewController.swift in Sources */,
 				C4E9CB9A1BB9775E00E428EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -390,6 +390,12 @@ extension RouteViewController: SidePanelViewControllerDelegate {
             delegate?.collapseSidePanels()
             
             return
+            
+        case 3:
+            destViewController  = self.storyboard?.instantiateViewControllerWithIdentifier("PaymentViewController") as! PaymentViewController
+            break
+            
+            
         case 4: destViewController  = self.storyboard?.instantiateViewControllerWithIdentifier("FeedbackViewController") as! FeedbackViewController
             break
 
@@ -398,6 +404,9 @@ extension RouteViewController: SidePanelViewControllerDelegate {
         
             return
         }
+        
+        print(destViewController)
+        
         self.navigationController?.pushViewController(destViewController, animated: false)
         delegate?.collapseSidePanels()
         

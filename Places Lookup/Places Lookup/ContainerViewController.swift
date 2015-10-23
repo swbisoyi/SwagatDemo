@@ -23,8 +23,10 @@ class ContainerViewController: UIViewController {
     var routeViewController: RouteViewController!
     var viewController: ViewController!
     var feedbackViewController: FeedbackViewController!
-  
-  var currentState: SlideOutState = .BothCollapsed {
+    var paymentViewController : PaymentViewController!
+    
+    
+    var currentState: SlideOutState = .BothCollapsed {
     didSet {
       let shouldShowShadow = currentState != .BothCollapsed
       showShadowForCenterViewController(shouldShowShadow)
@@ -45,6 +47,9 @@ class ContainerViewController: UIViewController {
     
     feedbackViewController = UIStoryboard.centerFeedbackViewController()
     feedbackViewController.delegate = self
+    
+    paymentViewController = UIStoryboard.centerPaymentViewController()
+    paymentViewController.delegate = self
     
     // wrap the centerViewController in a navigation controller, so we can push views to it
     // and display bar button items in the navigation bar
@@ -223,6 +228,9 @@ private extension UIStoryboard {
     }
     class func centerFeedbackViewController() -> FeedbackViewController? {
         return mainStoryboard().instantiateViewControllerWithIdentifier("FeedbackViewController") as? FeedbackViewController
+    }
+    class func centerPaymentViewController() -> PaymentViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("PaymentViewController") as? PaymentViewController
     }
     
     
