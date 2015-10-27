@@ -391,7 +391,7 @@ extension RouteViewController: SidePanelViewControllerDelegate {
             
             return
             
-        case 3:
+        case 2:
             destViewController  = self.storyboard?.instantiateViewControllerWithIdentifier("PaymentViewController") as! PaymentViewController
             break
             

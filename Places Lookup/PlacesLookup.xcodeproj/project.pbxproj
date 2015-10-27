@@ -20,6 +20,11 @@
 		DF52E81B1BD41299001E7334 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52E81A1BD41299001E7334 /* MenuTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		DF65A26E1BC4F1E1000523D4 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65A26D1BC4F1E1000523D4 /* RouteViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF65A2701BC4F1E9000523D4 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65A26F1BC4F1E9000523D4 /* MapTasks.swift */; settings = {ASSET_TAGS = (); }; };
+		DF74AB571BDCBC67009A475F /* PriceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF74AB561BDCBC67009A475F /* PriceCollectionViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DF74AB591BDD43B5009A475F /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF74AB581BDD43B5009A475F /* TransactionsTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DF74AB5B1BDD46E2009A475F /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF74AB5A1BDD46E2009A475F /* TransactionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFA30D081BDC9BAA00FC2BA3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA30D071BDC9BAA00FC2BA3 /* SystemConfiguration.framework */; };
+		DFA30D0A1BDC9BF800FC2BA3 /* libPaymentsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA30D091BDC9BF800FC2BA3 /* libPaymentsSDK.a */; settings = {ASSET_TAGS = (); }; };
 		DFB3DB1C1BD3A789001B81ED /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB3DB1B1BD3A789001B81ED /* SidePanelViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DFB3DB2B1BD3A81C001B81ED /* ID-100113060.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFB3DB201BD3A81C001B81ED /* ID-100113060.jpg */; settings = {ASSET_TAGS = (); }; };
 		DFB3DB371BD3A974001B81ED /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB3DB361BD3A974001B81ED /* ContainerViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -68,6 +73,18 @@
 		DF52E81A1BD41299001E7334 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		DF65A26D1BC4F1E1000523D4 /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
 		DF65A26F1BC4F1E9000523D4 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
+		DF74AB561BDCBC67009A475F /* PriceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCollectionViewCell.swift; sourceTree = "<group>"; };
+		DF74AB581BDD43B5009A475F /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
+		DF74AB5A1BDD46E2009A475F /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		DF9FC6AD1BDB4E85002F12E5 /* PlacecLookUp-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlacecLookUp-Header.h"; sourceTree = "<group>"; };
+		DF9FC6B41BDB4EEB002F12E5 /* libPaymentsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPaymentsSDK.a; path = "../../Paytm/iOS sample application/2_1/libPaymentsSDK.a"; sourceTree = "<group>"; };
+		DFA30D071BDC9BAA00FC2BA3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DFA30D091BDC9BF800FC2BA3 /* libPaymentsSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentsSDK.a; sourceTree = "<group>"; };
+		DFA30D0C1BDC9C1800FC2BA3 /* PaymentsSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentsSDK.h; sourceTree = "<group>"; };
+		DFA30D0D1BDC9C1800FC2BA3 /* PGMerchantConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMerchantConfiguration.h; sourceTree = "<group>"; };
+		DFA30D0E1BDC9C1800FC2BA3 /* PGOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGOrder.h; sourceTree = "<group>"; };
+		DFA30D0F1BDC9C1800FC2BA3 /* PGServerEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGServerEnvironment.h; sourceTree = "<group>"; };
+		DFA30D101BDC9C1800FC2BA3 /* PGTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGTransactionViewController.h; sourceTree = "<group>"; };
 		DFB3DB1B1BD3A789001B81ED /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 		DFB3DB201BD3A81C001B81ED /* ID-100113060.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ID-100113060.jpg"; sourceTree = "<group>"; };
 		DFB3DB361BD3A974001B81ED /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFA30D0A1BDC9BF800FC2BA3 /* libPaymentsSDK.a in Frameworks */,
+				DFA30D081BDC9BAA00FC2BA3 /* SystemConfiguration.framework in Frameworks */,
 				1C872E4104CA7D3BD8796655 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +134,8 @@
 		876C4F035E0ECBCC6C70CFF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFA30D071BDC9BAA00FC2BA3 /* SystemConfiguration.framework */,
+				DF9FC6B41BDB4EEB002F12E5 /* libPaymentsSDK.a */,
 				588985AD510CF5AC21E3DD00 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -123,6 +144,8 @@
 		C4E9CB8D1BB9775E00E428EF = {
 			isa = PBXGroup;
 			children = (
+				DF9FC6AD1BDB4E85002F12E5 /* PlacecLookUp-Header.h */,
+				DFA30D091BDC9BF800FC2BA3 /* libPaymentsSDK.a */,
 				C4E9CB981BB9775E00E428EF /* Places Lookup */,
 				C4E9CBAD1BB9775E00E428EF /* Places LookupTests */,
 				C4E9CBB81BB9775E00E428EF /* Places LookupUITests */,
@@ -145,6 +168,7 @@
 		C4E9CB981BB9775E00E428EF /* Places Lookup */ = {
 			isa = PBXGroup;
 			children = (
+				DFA30D0B1BDC9C1800FC2BA3 /* include */,
 				DFB3DB1F1BD3A80B001B81ED /* Cats */,
 				C4E9CB991BB9775E00E428EF /* AppDelegate.swift */,
 				DFDD17C21BCD8D80001D208C /* StoryBoards */,
@@ -175,6 +199,27 @@
 			path = "Places LookupUITests";
 			sourceTree = "<group>";
 		};
+		DF74AB5C1BDD4FBA009A475F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DF74AB561BDCBC67009A475F /* PriceCollectionViewCell.swift */,
+				DF74AB581BDD43B5009A475F /* TransactionsTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		DFA30D0B1BDC9C1800FC2BA3 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DFA30D0C1BDC9C1800FC2BA3 /* PaymentsSDK.h */,
+				DFA30D0D1BDC9C1800FC2BA3 /* PGMerchantConfiguration.h */,
+				DFA30D0E1BDC9C1800FC2BA3 /* PGOrder.h */,
+				DFA30D0F1BDC9C1800FC2BA3 /* PGServerEnvironment.h */,
+				DFA30D101BDC9C1800FC2BA3 /* PGTransactionViewController.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		DFB3DB1F1BD3A80B001B81ED /* Cats */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +241,7 @@
 			children = (
 				DF0B304F1BD8CF33000FB569 /* LoginViewController.swift */,
 				DFD226FE1BD898E4004F9AC9 /* PaymentViewController.swift */,
+				DF74AB5A1BDD46E2009A475F /* TransactionViewController.swift */,
 				DFD227001BD89A20004F9AC9 /* AccountPaymentViewController.swift */,
 				DFD227021BD89A47004F9AC9 /* EncashPaymentViewController.swift */,
 				DF65A26D1BC4F1E1000523D4 /* RouteViewController.swift */,
@@ -209,6 +255,7 @@
 		DFDD17C01BCD8D2D001D208C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DF74AB5C1BDD4FBA009A475F /* Cell */,
 				DFDD17C11BCD8D42001D208C /* Menu */,
 			);
 			name = Views;
@@ -299,7 +346,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Medigarage Studios LTD";
+				ORGANIZATIONNAME = "Swagat Kumar Bisoyi";
 				TargetAttributes = {
 					C4E9CB951BB9775E00E428EF = {
 						CreatedOnToolsVersion = 7.0;
@@ -408,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF74AB571BDCBC67009A475F /* PriceCollectionViewCell.swift in Sources */,
 				DFB3DB371BD3A974001B81ED /* ContainerViewController.swift in Sources */,
 				DF65A26E1BC4F1E1000523D4 /* RouteViewController.swift in Sources */,
 				DF65A2701BC4F1E9000523D4 /* MapTasks.swift in Sources */,
@@ -419,8 +467,10 @@
 				DFD227011BD89A20004F9AC9 /* AccountPaymentViewController.swift in Sources */,
 				DFD227031BD89A47004F9AC9 /* EncashPaymentViewController.swift in Sources */,
 				DFE702391BD9182800FB36CF /* FeedbackViewController.swift in Sources */,
+				DF74AB591BDD43B5009A475F /* TransactionsTableViewCell.swift in Sources */,
 				DF0B30501BD8CF33000FB569 /* LoginViewController.swift in Sources */,
 				C4E9CB9A1BB9775E00E428EF /* AppDelegate.swift in Sources */,
+				DF74AB5B1BDD46E2009A475F /* TransactionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +565,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Eragon/Desktop/Quick Ride/Places Lookup/PlacecLookUp-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -553,6 +604,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Eragon/Desktop/Quick Ride/Places Lookup/PlacecLookUp-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -563,8 +615,18 @@
 			baseConfigurationReference = 597048E025AC83BE155F9A91 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Places",
+					Lookup,
+				);
 				INFOPLIST_FILE = "Places Lookup/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.medigarage.PlacesLookup;
 				PRODUCT_NAME = PlacesLookup;
 			};
@@ -575,8 +637,18 @@
 			baseConfigurationReference = C3EDFA9726317C32AF6EF761 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Places",
+					Lookup,
+				);
 				INFOPLIST_FILE = "Places Lookup/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.medigarage.PlacesLookup;
 				PRODUCT_NAME = PlacesLookup;
 			};

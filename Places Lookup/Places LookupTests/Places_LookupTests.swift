@@ -2,8 +2,8 @@
 //  Places_LookupTests.swift
 //  Places LookupTests
 //
-//  Created by Malek T. on 9/28/15.
-//  Copyright © 2015 Medigarage Studios LTD. All rights reserved.
+//  Created by Swagat Kumar Bisoyi. on 9/28/15.
+//  Copyright © 2015 Swagat Kumar Bisoyi. All rights reserved.
 //
 
 import XCTest
