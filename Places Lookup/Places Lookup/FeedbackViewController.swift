@@ -12,10 +12,19 @@ class FeedbackViewController: UIViewController {
 
     var delegate: CenterViewControllerDelegate?
 
+    @IBOutlet var btnStars: [UIButton]!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = containerVC.feedbackViewController.delegate
         self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        for i in 0...btnStars.count-1
+        {
+            btnStars[i].setBackgroundImage(UIImage(named: "starblank"), forState: UIControlState.Normal)
+        }
+
         // Do any additional setup after loading the view.
     }
 
@@ -31,6 +40,20 @@ class FeedbackViewController: UIViewController {
         
     }
 
+    @IBAction func btnRateTapped(sender: AnyObject) {
+        for i in 0...btnStars.count-1
+        {
+            if sender.tag < i
+            {
+                btnStars[i].setBackgroundImage(UIImage(named: "starblank"), forState: UIControlState.Normal)
+            }
+            else
+            {
+                btnStars[i].setBackgroundImage(UIImage(named: "starfilled"), forState: UIControlState.Normal)
+            }
+        }
+
+    }
 
     /*
     // MARK: - Navigation

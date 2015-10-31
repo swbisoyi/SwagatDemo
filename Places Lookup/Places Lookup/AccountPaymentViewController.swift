@@ -161,6 +161,23 @@ class AccountPaymentViewController: UIViewController, PGTransactionDelegate , UI
     func didSucceedTransaction(controller: PGTransactionViewController!, response: [NSObject : AnyObject]!) {
         let title : String = String(format: "Your order  was completed successfully. \n %@", arguments: [response])
         UIAlertView(title: title, message: response.description, delegate: self, cancelButtonTitle: "OK").show()
+        
+        
+        let requestURLRecharge = NSURL(string:"http://192.168.1.15:8080/dishaapiserver/rest/account/balance/recharge?accountid=7829564947&points=\(txtFieldAmount.text)")!
+        
+        let requestRecharge = NSMutableURLRequest(URL: requestURLRecharge)
+        requestRecharge.HTTPMethod = "PUT"
+        
+        let sessionRecharge = NSURLSession.sharedSession()
+        let taskRecharge = sessionRecharge.dataTaskWithRequest(requestRecharge)
+        
+        taskRecharge.resume()
+        
+
+        
+        
+        
+        
         self.removeController(controller)
     }
     

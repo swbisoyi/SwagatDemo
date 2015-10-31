@@ -17,6 +17,8 @@
 		C4E9CBBA1BB9775E00E428EF /* Places_LookupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9CBB91BB9775E00E428EF /* Places_LookupUITests.swift */; };
 		C4EF15001BBC41AC002DDCF3 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF14FF1BBC41AB002DDCF3 /* SearchResultsController.swift */; };
 		DF0B30501BD8CF33000FB569 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B304F1BD8CF33000FB569 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF28840B1BE48955002F5580 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF28840A1BE48955002F5580 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		DF28840E1BE489B8002F5580 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF28840D1BE489B8002F5580 /* RestApiManager.swift */; settings = {ASSET_TAGS = (); }; };
 		DF52E81B1BD41299001E7334 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52E81A1BD41299001E7334 /* MenuTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		DF65A26E1BC4F1E1000523D4 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65A26D1BC4F1E1000523D4 /* RouteViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF65A2701BC4F1E9000523D4 /* MapTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65A26F1BC4F1E9000523D4 /* MapTasks.swift */; settings = {ASSET_TAGS = (); }; };
@@ -70,6 +72,9 @@
 		C4E9CBBB1BB9775E00E428EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4EF14FF1BBC41AB002DDCF3 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		DF0B304F1BD8CF33000FB569 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		DF28840A1BE48955002F5580 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		DF28840C1BE48965002F5580 /* SwiftyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		DF28840D1BE489B8002F5580 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
 		DF52E81A1BD41299001E7334 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		DF65A26D1BC4F1E1000523D4 /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
 		DF65A26F1BC4F1E9000523D4 /* MapTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTasks.swift; sourceTree = "<group>"; };
@@ -168,6 +173,7 @@
 		C4E9CB981BB9775E00E428EF /* Places Lookup */ = {
 			isa = PBXGroup;
 			children = (
+				DF2884041BE487C1002F5580 /* RestApiHandlers */,
 				DFA30D0B1BDC9C1800FC2BA3 /* include */,
 				DFB3DB1F1BD3A80B001B81ED /* Cats */,
 				C4E9CB991BB9775E00E428EF /* AppDelegate.swift */,
@@ -197,6 +203,16 @@
 				C4E9CBBB1BB9775E00E428EF /* Info.plist */,
 			);
 			path = "Places LookupUITests";
+			sourceTree = "<group>";
+		};
+		DF2884041BE487C1002F5580 /* RestApiHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				DF28840C1BE48965002F5580 /* SwiftyJSON.h */,
+				DF28840D1BE489B8002F5580 /* RestApiManager.swift */,
+				DF28840A1BE48955002F5580 /* SwiftyJSON.swift */,
+			);
+			name = RestApiHandlers;
 			sourceTree = "<group>";
 		};
 		DF74AB5C1BDD4FBA009A475F /* Cell */ = {
@@ -457,6 +473,7 @@
 			files = (
 				DF74AB571BDCBC67009A475F /* PriceCollectionViewCell.swift in Sources */,
 				DFB3DB371BD3A974001B81ED /* ContainerViewController.swift in Sources */,
+				DF28840E1BE489B8002F5580 /* RestApiManager.swift in Sources */,
 				DF65A26E1BC4F1E1000523D4 /* RouteViewController.swift in Sources */,
 				DF65A2701BC4F1E9000523D4 /* MapTasks.swift in Sources */,
 				DFB3DB1C1BD3A789001B81ED /* SidePanelViewController.swift in Sources */,
@@ -469,6 +486,7 @@
 				DFE702391BD9182800FB36CF /* FeedbackViewController.swift in Sources */,
 				DF74AB591BDD43B5009A475F /* TransactionsTableViewCell.swift in Sources */,
 				DF0B30501BD8CF33000FB569 /* LoginViewController.swift in Sources */,
+				DF28840B1BE48955002F5580 /* SwiftyJSON.swift in Sources */,
 				C4E9CB9A1BB9775E00E428EF /* AppDelegate.swift in Sources */,
 				DF74AB5B1BDD46E2009A475F /* TransactionViewController.swift in Sources */,
 			);
@@ -629,7 +647,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.medigarage.PlacesLookup;
 				PRODUCT_NAME = PlacesLookup;
-				SWIFT_OBJC_BRIDGING_HEADER = "PlacecLookUp-Header.h";
 			};
 			name = Debug;
 		};
@@ -652,7 +669,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.medigarage.PlacesLookup;
 				PRODUCT_NAME = PlacesLookup;
-				SWIFT_OBJC_BRIDGING_HEADER = "PlacecLookUp-Header.h";
 			};
 			name = Release;
 		};

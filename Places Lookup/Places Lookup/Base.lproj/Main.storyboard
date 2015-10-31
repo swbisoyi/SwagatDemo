@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rNz-uz-dP2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rNz-uz-dP2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -318,10 +318,12 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lblCr" destination="RtZ-0D-c55" id="XrZ-qD-xuB"/>
                                             <outlet property="lblDate" destination="sWM-14-LJU" id="hGk-ns-aYw"/>
                                             <outlet property="lblDetail" destination="IfC-M5-Eoh" id="RzW-dG-gQn"/>
                                             <outlet property="lblID" destination="VUC-Du-NAC" id="jo0-ex-TJ9"/>
-                                            <outlet property="lblPoints" destination="CBR-P3-ewn" id="Xw4-zI-PSP"/>
+                                            <outlet property="lblPoints" destination="CBR-P3-ewn" id="Esd-72-tsQ"/>
+                                            <outlet property="lblPontsField" destination="QAe-96-6f6" id="cV9-lv-1Md"/>
                                             <outlet property="lblTime" destination="giG-p7-X47" id="vDg-KI-Ccr"/>
                                         </connections>
                                     </tableViewCell>
@@ -336,6 +338,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="tblTransaction" destination="g9Q-mH-ZTf" id="QzM-hO-5Jj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qpk-wE-GO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -388,6 +393,57 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHU-uA-xKS">
+                                <rect key="frame" x="74" y="154" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRateTapped:" destination="xXg-rh-C3f" eventType="touchUpInside" id="QNq-Kj-T8j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ5-lJ-Nom">
+                                <rect key="frame" x="126" y="154" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRateTapped:" destination="xXg-rh-C3f" eventType="touchUpInside" id="V0v-x0-682"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thg-HG-7z5">
+                                <rect key="frame" x="175" y="154" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRateTapped:" destination="xXg-rh-C3f" eventType="touchUpInside" id="S64-n7-bZA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qS4-qc-cwp">
+                                <rect key="frame" x="227" y="154" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRateTapped:" destination="xXg-rh-C3f" eventType="touchUpInside" id="pB2-DW-IH9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQb-s2-i7y">
+                                <rect key="frame" x="276" y="154" width="30" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnRateTapped:" destination="xXg-rh-C3f" eventType="touchUpInside" id="B3Z-Rx-ixu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLd-Eb-Ujx">
+                                <rect key="frame" x="161" y="115" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -396,6 +452,13 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="380" height="667"/>
+                    <connections>
+                        <outletCollection property="btnStars" destination="ZHU-uA-xKS" collectionClass="NSMutableArray" id="hGy-Eq-MMA"/>
+                        <outletCollection property="btnStars" destination="dQ5-lJ-Nom" collectionClass="NSMutableArray" id="Iin-Bk-pB5"/>
+                        <outletCollection property="btnStars" destination="Thg-HG-7z5" collectionClass="NSMutableArray" id="gT3-Tt-wlL"/>
+                        <outletCollection property="btnStars" destination="qS4-qc-cwp" collectionClass="NSMutableArray" id="tb1-6m-6o4"/>
+                        <outletCollection property="btnStars" destination="hQb-s2-i7y" collectionClass="NSMutableArray" id="2rr-fQ-KdA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ma6-5q-YQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -449,7 +512,7 @@
                                                         <constraint firstAttribute="width" constant="39" id="GPp-Pj-ebB"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGN-g0-Yq2">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Image Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGN-g0-Yq2">
                                                     <rect key="frame" x="74" y="16" width="81" height="17"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -726,6 +789,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnEncashTapped:" destination="v6F-46-arH" eventType="touchUpInside" id="fEQ-Z5-yI8"/>
+                                </connections>
                             </button>
                         </subviews>
                     </view>
