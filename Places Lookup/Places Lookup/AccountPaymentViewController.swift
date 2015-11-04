@@ -95,7 +95,7 @@ class AccountPaymentViewController: UIViewController, PGTransactionDelegate , UI
             orderDict["ORDER_ID"] = self.generateOrderIDWithPrefix("")
             orderDict["REQUEST_TYPE"] = "DEFAULT";
             orderDict["CUST_ID"] = "1234567890";
-            
+            print(orderDict["ORDER_ID"])
             let order : PGOrder = PGOrder(params: orderDict as [NSObject : AnyObject])
             
             PGServerEnvironment.selectServerDialog(self.view, completionHandler: { (type) -> Void in

@@ -17,6 +17,12 @@
 		C4E9CBBA1BB9775E00E428EF /* Places_LookupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E9CBB91BB9775E00E428EF /* Places_LookupUITests.swift */; };
 		C4EF15001BBC41AC002DDCF3 /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF14FF1BBC41AB002DDCF3 /* SearchResultsController.swift */; };
 		DF0B30501BD8CF33000FB569 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0B304F1BD8CF33000FB569 /* LoginViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF153E291BE9BF3F00C53FE1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF153E231BE9BF3F00C53FE1 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		DF153E2A1BE9BF3F00C53FE1 /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF153E241BE9BF3F00C53FE1 /* FacebookSDKStrings.bundle */; settings = {ASSET_TAGS = (); }; };
+		DF153E2B1BE9BF3F00C53FE1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF153E251BE9BF3F00C53FE1 /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		DF153E2C1BE9BF3F00C53FE1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF153E261BE9BF3F00C53FE1 /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		DF153E2D1BE9BF3F00C53FE1 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF153E271BE9BF3F00C53FE1 /* FBSDKMessengerShareKit.framework */; settings = {ASSET_TAGS = (); }; };
+		DF153E2E1BE9BF3F00C53FE1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF153E281BE9BF3F00C53FE1 /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
 		DF28840B1BE48955002F5580 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF28840A1BE48955002F5580 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
 		DF28840E1BE489B8002F5580 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF28840D1BE489B8002F5580 /* RestApiManager.swift */; settings = {ASSET_TAGS = (); }; };
 		DF52E81B1BD41299001E7334 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF52E81A1BD41299001E7334 /* MenuTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
@@ -72,6 +78,12 @@
 		C4E9CBBB1BB9775E00E428EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4EF14FF1BBC41AB002DDCF3 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		DF0B304F1BD8CF33000FB569 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		DF153E231BE9BF3F00C53FE1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		DF153E241BE9BF3F00C53FE1 /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		DF153E251BE9BF3F00C53FE1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		DF153E261BE9BF3F00C53FE1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		DF153E271BE9BF3F00C53FE1 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		DF153E281BE9BF3F00C53FE1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		DF28840A1BE48955002F5580 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		DF28840C1BE48965002F5580 /* SwiftyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
 		DF28840D1BE489B8002F5580 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApiManager.swift; sourceTree = "<group>"; };
@@ -104,9 +116,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF153E2E1BE9BF3F00C53FE1 /* FBSDKShareKit.framework in Frameworks */,
+				DF153E2B1BE9BF3F00C53FE1 /* FBSDKCoreKit.framework in Frameworks */,
 				DFA30D0A1BDC9BF800FC2BA3 /* libPaymentsSDK.a in Frameworks */,
+				DF153E2C1BE9BF3F00C53FE1 /* FBSDKLoginKit.framework in Frameworks */,
 				DFA30D081BDC9BAA00FC2BA3 /* SystemConfiguration.framework in Frameworks */,
 				1C872E4104CA7D3BD8796655 /* libPods.a in Frameworks */,
+				DF153E291BE9BF3F00C53FE1 /* Bolts.framework in Frameworks */,
+				DF153E2D1BE9BF3F00C53FE1 /* FBSDKMessengerShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +190,12 @@
 		C4E9CB981BB9775E00E428EF /* Places Lookup */ = {
 			isa = PBXGroup;
 			children = (
+				DF153E231BE9BF3F00C53FE1 /* Bolts.framework */,
+				DF153E241BE9BF3F00C53FE1 /* FacebookSDKStrings.bundle */,
+				DF153E251BE9BF3F00C53FE1 /* FBSDKCoreKit.framework */,
+				DF153E261BE9BF3F00C53FE1 /* FBSDKLoginKit.framework */,
+				DF153E271BE9BF3F00C53FE1 /* FBSDKMessengerShareKit.framework */,
+				DF153E281BE9BF3F00C53FE1 /* FBSDKShareKit.framework */,
 				DF2884041BE487C1002F5580 /* RestApiHandlers */,
 				DFA30D0B1BDC9C1800FC2BA3 /* include */,
 				DFB3DB1F1BD3A80B001B81ED /* Cats */,
@@ -411,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E9CBA41BB9775E00E428EF /* LaunchScreen.storyboard in Resources */,
+				DF153E2A1BE9BF3F00C53FE1 /* FacebookSDKStrings.bundle in Resources */,
 				DFB3DB2B1BD3A81C001B81ED /* ID-100113060.jpg in Resources */,
 				C4E9CBA11BB9775E00E428EF /* Assets.xcassets in Resources */,
 				C4E9CB9F1BB9775E00E428EF /* Main.storyboard in Resources */,
@@ -637,6 +661,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Places",
 					Lookup,
+					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)/Places",
+					Lookup/FacebookSDK,
+					"$(PROJECT_DIR)/Places",
+					Lookup/FacebookSDK,
+					"$(PROJECT_DIR)/Places",
+					Lookup,
 				);
 				INFOPLIST_FILE = "Places Lookup/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -657,6 +688,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Places",
+					Lookup,
+					"$(PROJECT_DIR)/FacebookSDK",
+					"$(PROJECT_DIR)/Places",
+					Lookup/FacebookSDK,
+					"$(PROJECT_DIR)/Places",
+					Lookup/FacebookSDK,
 					"$(PROJECT_DIR)/Places",
 					Lookup,
 				);

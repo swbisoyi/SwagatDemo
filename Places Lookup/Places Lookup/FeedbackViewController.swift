@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKMessengerShareKit
+import FBSDKShareKit
+import FBSDKLoginKit
+
 
 class FeedbackViewController: UIViewController {
 
@@ -24,6 +29,13 @@ class FeedbackViewController: UIViewController {
         {
             btnStars[i].setBackgroundImage(UIImage(named: "starblank"), forState: UIControlState.Normal)
         }
+
+        let likeButton : FBSDKLikeControl = FBSDKLikeControl()
+        likeButton.objectID = "https://www.facebook.com/QuickRide.in"
+        likeButton.center = self.view.center
+        self.view.addSubview(likeButton)
+        
+        likeButton.addTarget(self, action: "btnLike:", forControlEvents: UIControlEvents.TouchUpInside)
 
         // Do any additional setup after loading the view.
     }
@@ -53,6 +65,15 @@ class FeedbackViewController: UIViewController {
             }
         }
 
+    }
+
+    func btnLike( sender : AnyObject)
+    {
+        let openURL : FBSDKAppInviteContent = FBSDKAppInviteContent()
+        openURL.appLinkURL = NSURL(string:"https://www.facebook.com/QuickRide.in")
+        UIApplication.sharedApplication().openURL(openURL.appLinkURL)
+        
+        print("Check")
     }
 
     /*
